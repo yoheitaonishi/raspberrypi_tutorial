@@ -1,0 +1,2 @@
+* Soldering
+* set up display
