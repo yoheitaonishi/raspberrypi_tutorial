@@ -1,0 +1,1 @@
+* buy battery for moter
