@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<title>7 - サーボモーターの制御</title>
+<!-- for jQuery UI -->
+<link rel="stylesheet" href="js/jquery-ui.min.css">
+<script src="js/jquery-1.12.2.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/jquery.ui.touch-punch.min.js"></script>
+
+<!-- for WebIOPi -->
+<script src="js/require.js"></script>
+<script>
+require(["/webiopi.js", "javascript.js"], function(){
+    webiopi().ready( initialize_webiopi );
+});
+</script>
+</head>
+<body>
+<p>スクロールバーを動かすことで、サーボモーターの角度が変化します。</p>
+<div align="center">
+    <div id="text0_servo">サーボモーター0の角度調整</div>
+    <div id="slider0_servo"></div>
+    <div id="text1_servo">サーボモーター1の角度調整</div>
+    <div id="slider1_servo"></div>
+</div>
+
+</body>
+</html>
