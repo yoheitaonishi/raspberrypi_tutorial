@@ -54,12 +54,15 @@ adc_pin0 = 0
 
 try:
     while True:
-        inputVal0 = readadc(adc_pin0, SPICLK, SPIMOSI, SPIMISO, SPICS)
+        inputVal0 = readadc(adc_pin0, SPICLK, SPIMOSI, SPIMISO, SPICS)-8000 # I can't understand why I need -4000
+        print(inputVal0)
         if inputVal0 > 100 and inputVal0 < 2048:
+            print(1)
             p1.ChangeDutyCycle(0)
             duty = (2048-inputVal0)*70/2048
             p0.ChangeDutyCycle(duty)
         elif inputVal0 >= 2048 and inputVal0 < 4000:
+            print(2)
             p0.ChangeDutyCycle(0)
             duty = (inputVal0-2048)*70/2048
             p1.ChangeDutyCycle(duty)
