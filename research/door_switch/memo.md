@@ -1,3 +1,7 @@
+## センサーの種類
+
+proximity sensor sps-320
+
 ## 抵抗は不要説
 
 http://jellyware.jp/kurage/raspi/daiso_sensorlight.html
