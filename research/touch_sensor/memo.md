@@ -1,0 +1,1 @@
+prototype excludes touch sensor
